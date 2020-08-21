@@ -1,5 +1,5 @@
-# CASMOS
-<h3 align="center">CASMOS</h3>
+# CKOS
+<h3 align="center">CKOS</h3>
 Hello! I am making a Simple kernel. This is one of my first projects so it isn't perfect, I know.
 If you want to help, feel free to contact me at oe12@protonmail.com. Please no spam though.
 
