@@ -5,16 +5,16 @@ as --32 boot.s -o boot.o
 gcc -m32 -c kernel.c -o kernel.o -std=gnu99 -ffreestanding -O2 -Wall -Wextra
 
 #linking the kernel with kernel.o and boot.o files
-ld -m elf_i386 -T linker.ld kernel.o boot.o -o OSMOS.bin -nostdlib
+ld -m elf_i386 -T linker.ld kernel.o boot.o -o CKOS.bin -nostdlib
 
 #check MyOS.bin file is x86 multiboot file or not
-grub-file --is-x86-multiboot OSMOS.bin
+grub-file --is-x86-multiboot CKOS.bin
 
 #building the iso file
 mkdir -p isodir/boot/grub
-cp OSMOS.bin isodir/boot/OSMOS.bin
+cp CKOS.bin isodir/boot/CKOS.bin
 cp grub.cfg isodir/boot/grub/grub.cfg
-grub-mkrescue -o OSMOS.iso isodir
+grub-mkrescue -o CKOS.iso isodir
 
 #run it in qemu
-qemu-system-x86_64 -cdrom OSMOS.iso
+qemu-system-x86_64 -cdrom CKOS.iso

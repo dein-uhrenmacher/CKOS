@@ -145,7 +145,7 @@ void kernel_entry()
     assign g_fore_color & g_back_color to color values
     g_fore_color = BRIGHT_RED;
   */
-  print_string("CASMOS booted successfuly!");
+  print_string("CKOS booted successfuly!");
   print_new_line();
   print_new_line();
   print_string("We welcome you!");
