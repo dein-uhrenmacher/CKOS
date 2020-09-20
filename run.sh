@@ -1,3 +1,4 @@
+#!/bin/sh
 #assemble boot.s file
 as --32 boot.s -o boot.o
 
